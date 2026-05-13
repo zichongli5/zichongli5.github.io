@@ -3,138 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zichong Li, Ph.D. student in Machine Learning at Georgia Tech.">
     <title>Zichong Li</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="image.jpg" alt="Zichong Li" width="200" height="200">
-        <h1>Zichong Li</h1>
-        <p>Ph.D Student in Machine Learning, Georgia Institute of Technology</p>
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a class="nav-name" href="#">Zichong Li</a>
+            <div class="nav-links">
+                <a href="#news">News</a>
+                <a href="#publications">Publications</a>
+                <a href="#education">Education</a>
+                <a href="Resume_zichong.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <img class="portrait" src="image.jpg" alt="Portrait of Zichong Li" width="220" height="220">
+            <div class="hero-copy">
+                <h1>Zichong Li</h1>
+                <p class="lead">
+                    I am a Ph.D. student in Machine Learning at Georgia Institute of Technology, advised by
+                    <a href="https://www2.isye.gatech.edu/~tzhao80/" target="_blank" rel="noopener noreferrer">Prof. Tuo Zhao</a>.
+                    I received my bachelor's and master's degrees from the University of Science and Technology of China.
+                    My research focuses on efficient and reliable large language model training, including optimizer and
+                    architecture design for pretraining, as well as training algorithms for mid- and post-training.
+                    My CV can be found <a href="Resume_zichong.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+                </p>
+            </div>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Ph.D. candidate at the H. Milton Stewart School of Industrial and Systems Engineering, Georgia Institute of Technology,
-        advised by <a href="https://www2.isye.gatech.edu/~tzhao80/">Prof. Tuo Zhao</a>. 
-        I received my bachelor's and master's degrees from the University of Science and Technology of China. 
-        My research interests include large language models (LLMs), reinforcement learning with human feedback (RLHF), and point processes. My CV could be found <a href="Resume_zichong.pdf" target="_blank">here</a>.</p> 
-    </section>
+    <main>
+        <section id="news" class="section">
+            <div class="section-heading">
+                <h2>Recent Highlights</h2>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <span class="date">2026</span>
+                    <p>
+                        <a href="https://arxiv.org/abs/2510.05491" target="_blank" rel="noopener noreferrer">NorMuon</a>
+                        was selected as an ICML 2026 <span class="spotlight">Spotlight</span> paper! The optimizer achieves new leaderboard results on
+                        <a href="https://github.com/KellerJordan/modded-nanogpt" target="_blank" rel="noopener noreferrer">modded-nanogpt</a>,
+                        and the official implementation is available at
+                        <a href="https://github.com/zichongli5/NorMuon" target="_blank" rel="noopener noreferrer">zichongli5/NorMuon</a>.
+                    </p>
+                </li>
+                <li>
+                    <span class="date">2025</span>
+                    <p>
+                        SlimMoE open models
+                        <a href="https://huggingface.co/microsoft/Phi-tiny-MoE-instruct" target="_blank" rel="noopener noreferrer">Phi-tiny-MoE-instruct</a>
+                        and
+                        <a href="https://huggingface.co/microsoft/Phi-mini-MoE-instruct" target="_blank" rel="noopener noreferrer">Phi-mini-MoE-instruct</a>
+                        were released on Hugging Face in collaboration with Microsoft, with 850K+ total downloads!
+                    </p>
+                </li>
+            </ul>
+        </section>
 
-    <section id="news">
-        <h2>Recent News</h2>
-        <ul>
-            <li>
-                <strong>2025</strong> - SlimMoE-based open models 
-                <a href="https://huggingface.co/microsoft/Phi-tiny-MoE-instruct" target="_blank">Phi-tiny-MoE-instruct</a> and 
-                <a href="https://huggingface.co/microsoft/Phi-mini-MoE-instruct" target="_blank">Phi-mini-MoE-instruct</a> 
-                are released on Hugging Face in collaboration with Microsoft. These compact MoE instruction models have collectively surpassed 200k downloads recently!!
-            </li>
-            <li>
-                <strong>2025</strong> - Our NorMuon optimizer achieves new leaderboard results on 
-                <a href="https://github.com/KellerJordan/modded-nanogpt" target="_blank">modded-nanogpt</a>!!
-                We release the official implementation at 
-                <a href="https://github.com/zichongli5/NorMuon" target="_blank">zichongli5/NorMuon</a>.
-            </li>
-        </ul>
-    </section>
+        <section id="publications" class="section">
+            <div class="section-heading">
+                <h2>Publications</h2>
+            </div>
+            <ol class="publication-list">
+                <li>
+                    <a href="https://arxiv.org/abs/2510.05491" target="_blank" rel="noopener noreferrer">NorMuon: Making Muon More Efficient and Scalable</a>
+                    <span><b>Zichong Li*</b>, Liming Liu*, Chen Liang, Weizhu Chen, Tuo Zhao.</span>
+                    <em>ICML 2026. Spotlight, top 2.2%.</em>
+                </li>
+                <li>
+                    <span class="paper-title">Shuffle the Context: RoPE-Perturbed Self-Distillation for Long-Context Adaptation</span>
+                    <span><b>Zichong Li</b>, Chen Liang, Liliang Ren, Tuo Zhao, Yelong Shen, Weizhu Chen.</span>
+                    <em>ICML 2026.</em>
+                </li>
+                <li>
+                    <a href="https://arxiv.org/abs/2502.17410" target="_blank" rel="noopener noreferrer">COSMOS: A Hybrid Adaptive Optimizer for Efficient Training of Large Language Models</a>
+                    <span>Liming Liu, Zhenghao Xu, Zixuan Zhang, Hao Kang, <b>Zichong Li</b>, Chen Liang, Weizhu Chen, Tuo Zhao.</span>
+                    <em>ICLR 2026.</em>
+                </li>
+                <li>
+                    <a href="https://arxiv.org/abs/2506.18349" target="_blank" rel="noopener noreferrer">SlimMoE: Structured Compression of Large MoE Models via Expert Slimming and Distillation</a>
+                    <span><b>Zichong Li</b>, Chen Liang, Zixuan Zhang, Ilgee Hong, Young Jin Kim, Weizhu Chen, Tuo Zhao.</span>
+                    <em>COLM 2025.</em>
+                </li>
+                <li>
+                    <a href="https://arxiv.org/abs/2503.04104" target="_blank" rel="noopener noreferrer">LLMs Can Generate a Better Answer by Aggregating Their Own Responses</a>
+                    <span><b>Zichong Li</b>, Xinyu Feng, Yuheng Cai, Zixuan Zhang, Tianyi Liu, Chen Liang, Weizhu Chen, Haoyu Wang, Tuo Zhao.</span>
+                    <em>arXiv 2025.</em>
+                </li>
+                <li>
+                    <span class="paper-title">Mitigating Tail Latency for On-Device Inference with Load-Balanced Heterogeneous Models</span>
+                    <span>Mu Yuan, Lan Zhang, Di Duan, Liekang Zeng, Miao-Hui Song, <b>Zichong Li</b>, Guoliang Xing, Xiang-Yang Li.</span>
+                    <em>IEEE TMC 2025.</em>
+                </li>
+                <li>
+                    <span class="paper-title">Adaptive Preference Scaling for Reinforcement Learning with Human Feedback</span>
+                    <span>Ilgee Hong*, <b>Zichong Li*</b>, Alexander Bukharin, Yixiao Li, Haoming Jiang, Tianbao Yang, Tuo Zhao.</span>
+                    <em>NeurIPS 2024. *Equal contribution.</em>
+                </li>
+                <li>
+                    <span class="paper-title">Robust Reinforcement Learning from Corrupted Human Feedback</span>
+                    <span>Alexander Bukharin, Ilgee Hong, Haoming Jiang, <b>Zichong Li</b>, Qingru Zhang, Zixuan Zhang, Tuo Zhao.</span>
+                    <em>NeurIPS 2024.</em>
+                </li>
+                <li>
+                    <a href="https://arxiv.org/pdf/2310.16310" target="_blank" rel="noopener noreferrer">Beyond Point Prediction: Score Matching-based Pseudolikelihood Estimation of Neural Marked Spatio-Temporal Point Process</a>
+                    <span><b>Zichong Li</b>, Qunzhi Xu, Zhenghao Xu, Yajun Mei, Tuo Zhao, Hongyuan Zha.</span>
+                    <em>ICML 2024.</em>
+                </li>
+                <li>
+                    <a href="https://proceedings.mlr.press/v202/li23aj/li23aj.pdf" target="_blank" rel="noopener noreferrer">SMURF-THP: Score Matching-based Uncertainty Quantification for Transformer Hawkes Process</a>
+                    <span><b>Zichong Li</b>, Yanbo Xu, Simiao Zuo, Haoming Jiang, Chao Zhang, Tuo Zhao, Hongyuan Zha.</span>
+                    <em>ICML 2023.</em>
+                </li>
+                <li>
+                    <a href="https://ieeexplore.ieee.org/iel7/10184508/10184509/10184802.pdf" target="_blank" rel="noopener noreferrer">Efficient Deep Ensemble Inference via Query Difficulty-dependent Task Scheduling</a>
+                    <span><b>Zichong Li</b>, Lan Zhang, Mu Yuan, Miaohui Song, Qi Song.</span>
+                    <em>ICDE 2023.</em>
+                </li>
+                <li>
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3543507.3583533" target="_blank" rel="noopener noreferrer">CoTel: Ontology-Neural Co-Enhanced Text Labeling</a>
+                    <span>Miaohui Song, Lan Zhang, Mu Yuan, <b>Zichong Li</b>, Qi Song, Yijun Liu, Guidong Zheng.</span>
+                    <em>WWW 2023.</em>
+                </li>
+                <li>
+                    <a href="http://proceedings.mlr.press/v119/zuo20a/zuo20a.pdf" target="_blank" rel="noopener noreferrer">Transformer Hawkes Process</a>
+                    <span>Simiao Zuo, Haoming Jiang, <b>Zichong Li</b>, Tuo Zhao, Hongyuan Zha.</span>
+                    <em>ICML 2020.</em>
+                </li>
+                <li>
+                    <span class="paper-title">PRIMAL: A Linear Programming-based Sparse Learning Library in R and Python</span>
+                    <span>Qianli Shen*, <b>Zichong Li*</b>, Yujia Xie, Tuo Zhao.</span>
+                    <em>Software. *Equal contribution.</em>
+                </li>
+            </ol>
+        </section>
 
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li>
-                <p><a href="https://arxiv.org/abs/2510.05491" target="_blank">NorMuon: Making Muon more Efficient and Scalable</a><br />
-                <b>Zichong Li</b>, Liming Liu, Chen Liang, Weizhu Chen, Tuo Zhao.
-                <i>Submitted to ICLR 2026</i>
-                <br /></p>
-            </li>
-            <li>
-                <p><a href="https://arxiv.org/abs/2502.17410" target="_blank">COSMOS: A Hybrid Adaptive Optimizer for Memory-Efficient Training of LLMs</a><br />
-                Liming Liu, Zhenghao Xu, Zixuan Zhang, Hao Kang, <b>Zichong Li</b>, Chen Liang, Weizhu Chen, Tuo Zhao.
-                <i>arXiv preprint arXiv:2502.17410, 2025. Submitted to ICLR 2026</i>
-                <br /></p>
-            </li>
-            <li>
-                <p><a href="https://arxiv.org/abs/2506.18349" target="_blank">SlimMoE: Structured Compression of Large MoE Models via Expert Slimming and Distillation</a><br />
-                <b>Zichong Li</b>, Chen Liang, Zixuan Zhang, Ilgee Hong, Young Jin Kim, Weizhu Chen, Tuo Zhao. 
-                <i>COLM 2025 (accepted)</i>
-                <br /></p>
-            </li>
-            <li>
-                <p><a href="https://arxiv.org/abs/2503.04104" target="_blank">LLMs Can Generate a Better Answer by Aggregating Their Own Responses</a>
-                <br />
-                <b>Zichong Li</b>, Xinyu Feng, Yuheng Cai, Zixuan Zhang, Tianyi Liu, Chen Liang, Weizhu Chen, Haoyu Wang, Tuo Zhao. 
-                <i>arXiv preprint arXiv:2503.04104, 2025</i>
-                <br /></p>
-            </li>
-            <li>
-                <p>Adaptive Preference Scaling for Reinforcement Learning with Human Feedback
-                <br />
-                Ilgee Hong*, <b>Zichong Li*</b>, Alexander Bukharin, Yixiao Li, Haoming Jiang, Tianbao Yang, Tuo Zhao. 
-                <i>NeurIPS 2024</i>
-                <br /></p>
-            </li>
-            <li>
-                <p>Robust Reinforcement Learning from Corrupted Human Feedback
-                <br />
-                Alexander Bukharin, Ilgee Hong, Haoming Jiang, <b>Zichong Li</b>, Qingru Zhang, Zixuan Zhang, Tuo Zhao. 
-                <i>NeurIPS 2024</i>
-                <br /></p>
-            </li>
-            <li>
-                <p><a href="https://arxiv.org/pdf/2310.16310" target="_blank">Score Matching-based Pseudolikelihood Estimation of Neural Marked Spatio-Temporal Point Process with Uncertainty Quantification</a>
-                <br />
-                <b>Zichong Li</b>, Qunzhi Xu, Zhenghao Xu, Yajun Mei, Tuo Zhao, Hongyuan Zha. 
-                <i>ICML 2024</i>
-                <br /></p>
-            </li>
-            <li>
-                <p><a href="https://proceedings.mlr.press/v202/li23aj/li23aj.pdf" target="_blank">SMURF-THP: Score Matching-based UnceRtainty quantiFication for Transformer Hawkes Process</a>
-                <br />
-                <b>Zichong Li</b>, Yanbo Xu, Simiao Zuo, Haoming Jiang, Chao Zhang, Tuo Zhao, Hongyuan Zha. 
-                <i>ICML 2023</i>
-                <br /></p>
-            </li>
-            <li>
-                <p><a href="https://ieeexplore.ieee.org/iel7/10184508/10184509/10184802.pdf" target="_blank">Efficient Deep Ensemble Inference via Query Difficulty-dependent Task Scheduling</a>
-                <br />
-                <b>Zichong Li</b>, Lan Zhang, Mu Yuan, Miaohui Song, Qi Song. 
-                <i>ICDE 2023</i>
-                <br /></p>
-            </li>
-            <li>
-                <p><a href="https://dl.acm.org/doi/abs/10.1145/3543507.3583533" target="_blank">CoTel: Ontology-Neural Co-Enhanced Text Labeling</a>
-                <br />
-                Miaohui Song, Lan Zhang, Mu Yuan, <b>Zichong Li</b>, Qi Song, Yijun Liu, Guidong Zheng. 
-                <i>WWW 2023</i>
-                <br /></p>
-            </li>
-            <li>
-                <p><a href="http://proceedings.mlr.press/v119/zuo20a/zuo20a.pdf" target="_blank">Transformer Hawkes Process</a>
-                <br />
-                Simiao Zuo, Haoming Jiang, <b>Zichong Li</b>, Tuo Zhao, Hongyuan Zha. 
-                <i>ICML 2020</i>
-                <br /></p>
-            </li>
-        </ul>
-    </section>
-
-    <section id="Education">
-        <h2>Education</h2>
-        <ul>
-          <li>PhD in Machine Learning, Georgia Institute of Technology, 2027 (expected)
-        <br />
-        Supervisor: Prof. Tuo Zhao</li>
-          <li>MS in Data Science, University of Science and Technology of China, 2023
-        <br />
-        Supervisor: Prof. Lan Zhang</li>
-          <li>BS in Applied Mathematics, University of Science and Technology of China, 2020</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: zli911@gatech.edu</p>
-    </section>
+        <section id="education" class="section">
+            <div class="section-heading">
+                <h2>Education</h2>
+            </div>
+            <div class="education-list">
+                <article class="education-item">
+                    <div>
+                        <h3>Georgia Institute of Technology</h3>
+                        <p>Ph.D. in Machine Learning</p>
+                        <p>Advisor: <a href="https://www2.isye.gatech.edu/~tzhao80/" target="_blank" rel="noopener noreferrer">Prof. Tuo Zhao</a></p>
+                    </div>
+                    <span>Aug. 2023 - Present, Atlanta, GA</span>
+                </article>
+                <article class="education-item">
+                    <div>
+                        <h3>University of Science and Technology of China</h3>
+                        <p>M.S. in Data Science, rank 1/56</p>
+                        <p>Advisor: Prof. Lan Zhang</p>
+                    </div>
+                    <span>Sept. 2020 - June 2023, Hefei, China</span>
+                </article>
+                <article class="education-item">
+                    <div>
+                        <h3>University of Science and Technology of China</h3>
+                        <p>B.S. in Mathematics and Applied Mathematics / Probability Statistics</p>
+                    </div>
+                    <span>Sept. 2016 - June 2020, Hefei, China</span>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
